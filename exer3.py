@@ -9,7 +9,7 @@ numlegs = 94
 result = solve(numheads, numlegs)
 if result:
     chickens, rabbits = result
-    print(f"Numbers of chicken: {chickens}")
-    print(f"Numbers of chicken: {rabbits}")
+    print(chickens)
+    print(rabbits)
 else:
     print("No solition")
