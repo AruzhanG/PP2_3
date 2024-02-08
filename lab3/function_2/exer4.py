@@ -77,15 +77,22 @@ movies = [
 "category": "Romance"
 }
 ]
-def return_true(movie):
-    return movie['imdb'] > 5.5
+def calculate_average_imdb(movies):
+    if not movies:
+        return 0  
 
-movie_example = {
-    "name": "We Two",
-    "imdb": 7.2,
-    "category": "Romance"
-}
-result = return_true(movie_example)
-print(result)
+    total_score = sum(movie['imdb'] for movie in movies)
+    average_score = total_score / len(movies)
+    return average_score
 
 
+movies_list = [
+    {"name": "Movie 1", "imdb": 7.2},
+    {"name": "Movie 2", "imdb": 6.5},
+    {"name": "Movie 3", "imdb": 8.0}
+]
+
+average_score = calculate_average_imdb(movies_list)
+print("Average IMDB score:", average_score)
+
+    

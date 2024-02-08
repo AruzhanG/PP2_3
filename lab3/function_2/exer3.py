@@ -77,15 +77,10 @@ movies = [
 "category": "Romance"
 }
 ]
-def return_true(movie):
-    return movie['imdb'] > 5.5
+def get_category(movies,category):
+    movie_category = [movie for movie in movies if movie["category"] == category]
+    return movie_category
 
-movie_example = {
-    "name": "We Two",
-    "imdb": 7.2,
-    "category": "Romance"
-}
-result = return_true(movie_example)
+category_name = 'Susupence'
+result = get_category(movies,category_name)
 print(result)
-
-

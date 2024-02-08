@@ -77,15 +77,8 @@ movies = [
 "category": "Romance"
 }
 ]
-def return_true(movie):
-    return movie['imdb'] > 5.5
+def filter_movies_above_score(movies, threshold=5.5):
+    return [movie for movie in movies if movie['imdb'] > threshold]
 
-movie_example = {
-    "name": "We Two",
-    "imdb": 7.2,
-    "category": "Romance"
-}
-result = return_true(movie_example)
+result = filter_movies_above_score(movies)
 print(result)
-
-
