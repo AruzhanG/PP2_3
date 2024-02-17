@@ -1,4 +1,4 @@
-def solve(numheads, numlegs):
+"""def solve(numheads, numlegs):
     for x in range(numheads + 1):
         y = numheads - x
         if 2 * x + 4 * y == numlegs:
@@ -12,4 +12,21 @@ if result:
     print(chickens)
     print(rabbits)
 else:
-    print("No solition")
+    print("No solition")"""
+    
+def find(numheads,numlegs):
+    for x in range(numheads+1):
+        y = numheads - x
+        if 2 * x + 4 * y == numlegs:
+            return x,y
+        
+numheads = 35
+numlegs = 94
+result = find(numheads,numlegs)
+if result:
+    chickens,rabbits = result
+    print(chickens)
+    print(rabbits)
+else:
+    print("No solution")
+        

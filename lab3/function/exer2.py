@@ -1,4 +1,8 @@
 def fahren(k):
-    print(5/9 * (k- 32))
+    return 5/9 * (k - 32)
 
-fahren(456)
+"""fahren(456)"""
+
+user_input = float(input())
+result = fahren(user_input)
+print(result)
