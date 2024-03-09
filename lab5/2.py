@@ -1,5 +1,5 @@
 import re
-with open("row.txt", "r") as f:
+with open( '/Users/aruzhan/pp2_3/lab5/row.txt', "r") as f:
     content = f.read()
     pattern1 = "abb"
     pattern2 = "abbb"

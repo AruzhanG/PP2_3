@@ -9,8 +9,7 @@ def count(input_string):
             lower_count += 1
             
     
-    return upper_count, lower_count 
-
+    return upper_count, lower_count
 input_string = input()
 upper, lower = count(input_string)
 
