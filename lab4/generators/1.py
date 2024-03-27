@@ -9,4 +9,3 @@ def my_generator(n):
 for square in  my_generator(6):
     
     print(square, end= ' ')
-  
